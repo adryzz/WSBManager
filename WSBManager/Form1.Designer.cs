@@ -30,6 +30,7 @@ namespace WSBManager
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sandboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newSandboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,12 +63,15 @@ namespace WSBManager
             // newSandboxToolStripMenuItem
             // 
             this.newSandboxToolStripMenuItem.Name = "newSandboxToolStripMenuItem";
-            this.newSandboxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newSandboxToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newSandboxToolStripMenuItem.Text = "New sandbox";
             this.newSandboxToolStripMenuItem.Click += new System.EventHandler(this.newSandboxToolStripMenuItem_Click);
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 27);
@@ -89,14 +93,14 @@ namespace WSBManager
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.editToolStripMenuItem.Text = "Edit sandbox";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteSandboxToolStripMenuItem
             // 
             this.deleteSandboxToolStripMenuItem.Name = "deleteSandboxToolStripMenuItem";
-            this.deleteSandboxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteSandboxToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.deleteSandboxToolStripMenuItem.Text = "Delete sandbox";
             this.deleteSandboxToolStripMenuItem.Click += new System.EventHandler(this.deleteSandboxToolStripMenuItem_Click);
             // 
@@ -107,6 +111,7 @@ namespace WSBManager
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Windows Sandbox Manager";

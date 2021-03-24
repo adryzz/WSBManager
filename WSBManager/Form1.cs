@@ -37,7 +37,9 @@ namespace WSBManager
             }
             listView1.View = View.LargeIcon;
             listView1.LargeImageList = new ImageList();
-            listView1.LargeImageList.Images.Add(SystemIcons.Shield);
+            listView1.LargeImageList.ImageSize = new Size(64, 64);
+            listView1.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
+            listView1.LargeImageList.Images.Add(Properties.Resources.icon);
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
